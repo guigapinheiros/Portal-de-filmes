@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="estilos.css"/>
+        <title>Detalhes</title>
+    
+    </head>
+    <body>
+        <h1>DETALHES</h1>
+        <div class="container">
+            <div id="divDetalheFilme" class="row">
+            </div>
+        </div>
+
+        <script>
+            const params = new URLSearchParams(location.search);
+
+            let id = params.get('id');
+            
+            dadosFilmes = JSON.parse(localStorage.getItem('db_filmes'));
+
+            let idxFilme = dadosFilmes.results.findIndex ((elem) => elem.id == id)
+            if (idxFilme > -1) {
+                let filme = dadosFilmes.results[idxFilme];
+
+                document.getElementById('divDetalheFilme').innerHTML = `
+
+                <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="Card image cap">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">${filme.title}</h5>
+                            <p class="card-text">${filme.overview}</p>
+                        </div>
+                </div>
+            `
+
+            }
+
+            else {
+                alert('Filme não encontrado')
+            }
+            
+           
+            
+
+        </script>
+    </body>
+</html>

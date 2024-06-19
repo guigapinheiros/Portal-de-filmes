@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <title>GuigsFilms</title>
+        <meta name="description" content="PUC Minas Web Site">
+        <meta name="author" content="GuigsFilms">
+        <meta name="KeyWords" content="filmes, PUC">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="img/icon.ico">
+        <link rel ="shortcut icon" href="https://imagensemoldes.com.br/wp-content/uploads/2020/06/Foto-Pipoca-Cinema-PNG.png">
+
+        <link rel="stylesheet" href="estilos.css"/>
+    </head>
+
+    <body>
+        <!-- Cabeçalho -->
+
+        <header>
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="col-2">
+                            <a class="navbar-brand" href="https://w7.pngwing.com/pngs/483/1010/png-transparent-clapperboard-silent-film-computer-icons-others-rectangle-wikimedia-commons-film.png">GuigsFilmes</a>
+                            <img src="https://w7.pngwing.com/pngs/483/1010/png-transparent-clapperboard-silent-film-computer-icons-others-rectangle-wikimedia-commons-film.png" width="50" height="40">
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse col-10" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto col-10">
+                            <li class="nav-item active col">
+                              <a class="nav-link" href="#lancamentos">Lançamentos</a>
+                            </li>
+                            <li class="nav-item col">
+                              <a class="nav-link" href="#destaque">Em destaque</a>
+                            </li>
+                            <li class="nav-item col">
+                              <a class="nav-link" href="#avaliacoes">Avaliações</a>
+                            </li>
+                            <li class="nav-item col">
+                                <a class="nav-link" href="#entrevistas">Entrevistas</a>
+                            </li>
+                            <li class="nav-item col">
+                                <a class="nav-link" href="#novidades">Novidades</a>
+                            </li>
+
+                          </ul>
+                          
+                            <input onkeydown="valor(event)" class="form-control mr-sm-2" id="valorPesquisado" type="search" placeholder="Search" aria-label="Search">
+
+                          
+                        </div>
+                      </nav>
+                </div>
+        </header>
+
+        <!-- Carousel -->
+
+        <div style="background-color: #f9fafa;">
+            <div class="container">
+                <div class="row blog">
+                    <div class="col-md-12" >
+                        <h1 class="titulos" id="lancamentos" style="text-align: center;">Lançamentos</h2>
+                        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="col-12"> 
+                                <ol class="carousel-indicators">
+                                    <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#blogCarousel" data-slide-to="1"></li>
+                                </ol>
+                            </div>
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+    
+                                <div class="carousel-item active">
+                                    <div class="row"  style="padding:30px;">
+                                        <div class="col-lg-6 col-xs-12">
+                                          <iframe width="500" height="300" src="https://www.youtube.com/embed/kULcXm9V7aY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="col-6 col-lg-6 col-xs-12">
+                                            <p class="filmes">Tudo em todo lugar ao mesmo tempo</p>
+                                            <p><strong>Sinopse:</strong> Uma ruptura interdimensional bagunça a realidade e uma inesperada heroína precisa usar seus novos poderes para lutar contra os perigos bizarros do multiverso.</p>
+                                        <div class="row">
+                                            <div class="col-4"><p><strong>Diretores:</strong> Daniel Kwan e Daniel Scheinert</p></div>
+                                            <div class="col-4"><p><strong>Roteiro:</strong> Daniel Kwan e Daniel Scheinert</p></div>
+                                            <div class="col-4"><p><strong>Avaliação:</strong> ★★★★★</p></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <hr id="destaque">
+
+        <!-- Bloco de Destaque -->
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="destaques" id="destaques">Filmes Populares</h2>
+                </div>
+                <div class="col-6">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="divListaFilmes">
+            </div>
+        </div> 
+        <!-- Entrevista -->
+
+        <div class="container">
+            <div class="row">
+                <h1 class="titulos">Entrevistas & Making of</h1>
+                <div class="col ">
+                  <iframe width="320" height="180" src="https://www.youtube.com/embed/P9Jih7-LCVA" title="Everything Everywhere All At Once Behind the Scenes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <ul>
+                        <li class = "infos"><strong>Filme:</strong> Tudo em Todo Lugar ao Mesmo Tempo</li>
+                        <li class = "infos"><strong>Diretor:</strong> Daniel Kwan e Daniel Scheinert</li>
+                        <li class = "infos"><strong>Roteiro:</strong> Daniel Kwan e Daniel Scheinert</li>
+                    </ul>
+                </div>
+                <div class="col ">
+                  <iframe width="320" height="180" src="https://www.youtube.com/embed/KCzW2TewsU4" title="The Making Of Sonic The Hedgehog 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <ul>
+                        <li class = "infos"><strong>Filme:</strong> Sonic 2 - O Filme</li>
+                        <li class = "infos"><strong>Diretor:</strong> Jeff Fowler</li>
+                        <li class = "infos"><strong>Roteiro:</strong> Patrick Casey,  Josh Miller, John Whittington</li>
+                    </ul>
+                </div>
+                <div class="col ">
+                  <iframe width="320" height="180" src="https://www.youtube.com/embed/EbHuyvu3ErE" title="Uncharted - Fora do Mapa: Bastidores do filme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <ul>
+                        <li class = "infos"><strong>Filme:</strong> Uncharted: Fora do Mapa</li>
+                        <li class = "infos"><strong>Diretor:</strong> Ruben Fleischer</li>
+                        <li class = "infos"><strong>Roteiro:</strong> Rafe Judkins</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+        <hr id="novidades">
+
+        <!-- Novidades e Sobre -->
+    <main id="news" class="container">
+        <div class="row">
+          <div class="col-8">
+            <div class="news-header">
+              <h2>Novidades</h2>
+            </div>
+  
+            <div class="news-cards"> <!--div new cards-->
+                <div class="news-card d-flex"> <!--noticia-->
+                    <div class="d-flex align-items-center mr-3">
+                      <img height="150px" width="150Spx"class="news-card-img" src="https://br.web.img2.acsta.net/pictures/22/05/16/17/59/5165498.jpg" alt="Tudo">
+                    </div>
+      
+                    <div class="d-flex flex-column justify-content-between">
+                      <div class="news-title">
+                        <h5><a href="https://rollingstone.uol.com.br/entretenimento/diretores-recusaram-loki-para-dirigir-tudo-em-todo-lugar-ao-mesmo-tempo/">Diretores recusaram serie famosa para focar em filme.</a>
+                        </h5>
+                      </div>
+      
+                      <span>
+                        <p>Diretores recusaram Loki para dirigir Tudo em Todo Lugar ao Mesmo Tempo.</p>
+                      </span>
+      
+                      <div class="news-card-footer">
+                        <button type="button" class="btn btn-secondary btn-sm">Encantada</button> <button type="button" class="btn btn-secondary btn-sm">Idina Menzel</button>
+                      </div>
+                    </div>
+                  </div> <!--noticia-->
+  
+              <div class="news-card d-flex"> <!--noticia-->
+                <div class="d-flex align-items-center mr-3">
+                  <img height="150px" width="150Spx"class="news-card-img" src="https://portalpopline.com.br/wp-content/uploads/2022/02/doutor-estranho-poster.jpg" alt="Encanto">
+                </div>
+  
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="news-title">
+                    <h5><a href="https://legadodamarvel.com.br/doutor-estranho-2-marvel-libera-a-primeira-cena-deletada-do-filme-assista/">Veja a primeira cena deletada de Doutor Estranho</a>
+                    </h5>
+                  </div>
+  
+                  <span>
+                    <p>Doutor Estranho 2: Marvel libera a primeira cena deletada do filme – Assista.</p>
+                  </span>
+  
+                  <div class="news-card-footer">
+                    <button type="button" class="btn btn-secondary btn-sm">Disney</button> <button type="button" class="btn btn-secondary btn-sm">Lançamento</button>
+                  </div>
+                </div>
+              </div> <!--noticia-->
+              
+              <div class="news-card d-flex"> <!--noticia-->
+                <div class="d-flex align-items-center mr-3">
+                  <img height="150px" width="150Spx" class="news-card-img" src="https://static1.purebreak.com.br/articles/0/96/39/0/@/378756--stranger-things-4-temporada-vai-ganh-diapo-5.jpg" alt="Stranger Things">
+                </div>
+  
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="news-title">
+                    <h5><a href="https://observatoriodocinema.uol.com.br/listas/2022/04/stranger-things-pequenos-detalhes-que-voce-perdeu-no-trailer-da-4a-temporada">Stranger Things 4ª temporada</a>
+                    </h5>
+                  </div>
+  
+                  <span>
+                    <p>A nova temporada de Stranger Things finalmente ganhou seu primeiro trailer completo. A prévia, arrepiante, introduz várias novidades, e tem muitos momentos para observar com a atenção.</p>
+                  </span>
+  
+                  <div class="news-card-footer">
+                    <button type="button" class="btn btn-secondary btn-sm">Stranger Things</button> <button type="button" class="btn btn-secondary btn-sm">Nova temporada</button>
+                  </div>
+                </div>
+              </div> <!--noticia-->
+            </div> <!--fecha div new cards-->
+          </div>
+  
+          <div class="col-4">
+            <div class="about-header">
+              <h2>Sobre</h2>
+            </div>
+  
+            <div>
+                <p>Portal de Filmes desenvolvido para um trabalho de Desenvolvimento de Interface Web do curso de Ciência da Computação, PUC Minas.</p>
+            </div>
+  
+  
+            <div class="mt-3">
+            <div class="editorial-header">
+              <h2>Editorial</h2>
+            </div>
+              <div class="d-flex-row">
+                <div class="mr-2 mb-2">
+                  <img height="24" src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png" alt="User">
+                </div>
+  
+                <strong class="mr-2">Redação:</strong> 
+                <span>Guilherme Pinheiro</span>
+              </div>
+  
+              <div class="d-flex-row">
+                <div class="mr-2 mb-2">
+                  <img height="24" src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png" alt="User">
+                </div>
+  
+                <strong class="mr-2">Pesquisa:</strong> 
+                <span>Guilherme Pinheiro</span>
+              </div>
+  
+              <div class="d-flex-row">
+                <div class="mr-2 mb-2">
+                  <img height="24" src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png" alt="User">
+                </div>
+  
+                <strong class="mr-2">Gerente Geral:</strong> 
+                <span>Guilherme Pinheiro</span>
+              </div>
+            </div>
+  
+            <div class="social-medias mt-2">
+              <div class="mb-2">
+                <h2>Redes Sociais</h2>
+              </div>
+  
+              <div class="sm-icons d-flex-row">
+                <div>
+                    <a class="btn btn-outline-light btn-floating pt-0" href="https://www.facebook.com/pucminasoficial/" role="button"
+                    ><img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png" width="40" height="40"></i
+                  ></a>
+                </div>
+    
+                <div class="ml-4">
+                    <a class="btn btn-outline-light btn-floating m-1 pt-0" href="https://www.pucminas.br/vestibular/Paginas/default.aspx?utm_source=google&utm_medium=search&utm_campaign=pss-presencial-22&gclid=Cj0KCQjw0umSBhDrARIsAH7FCodLKvWEg4EF4yMBlDB01d1HqJ1Cel0qeqaXKns9qvE1QotEAYOGjHQaAga-EALw_wcB" role="button"
+                    ><img src="https://www.pucminas.br/pos/letras/noticias/PublishingImages/Paginas/COMUNICADO/Brasao%20PUC%20Minas%20aplicacao_cinza.png" width="40" height="40"></i
+                  ></a>
+                </div>
+                
+                <div class="ml-4">
+                    <a class="btn btn-outline-light btn-floating pt-0" href="https://www.instagram.com/napucminas/" role="button"
+                    ><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/%C3%8Dcone-Instagram-PNG.png" width="40" height="40"></a>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+  
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            <div class="pb-0">
+              <section>
+            <div class="text-center p-3 pl-0 navbar-dark" style="background-color: rgba(0, 0, 0, 0.3);">
+                <div class="row">
+                    <div class="col-10">
+                        <h6>© 2022 Copyright - Desenvolvimento de Interfaces Web - PUC Minas</h6>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Copyright -->
+          </footer>
+        <script src="app.js" defer></script>
+        <script src="pesquisa.js"></script> 
+    </body>
+</html>

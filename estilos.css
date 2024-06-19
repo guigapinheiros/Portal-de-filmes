@@ -1,0 +1,80 @@
+body{
+    font-family: 'Roboto', sans-serif;  
+}
+
+.banner{
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.tag{
+    width: 10px;
+    height: 25px;
+    margin: 0px 5px;
+    background-color:#ffffff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.nome{
+    font-size: 20px;
+    text-align: center;
+}
+.titulos{
+    text-align: left;
+    color: #000000;
+    font-size: 40px;
+}
+
+.infos{
+    list-style-type: none;
+    text-align: left;
+}
+
+.pessoalInfos{
+    list-style-type: none;
+    text-align: left;
+}
+
+.filmes{
+    font-style: bold;
+    font-size: 25px;
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #000000;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin: 0px 5px;
+}
+
+.blog .carousel-indicators .active {
+background: #474646;
+}
+
+/*Media Queries*/
+/* PARA SAMSUNG GALAXY S5; PIXEL2; PIXEL 2XL;IPHONE5/SE; IPHONE 6,7,8; IPHONE 6,6,8 PLUS; IPHONEX      */
+@media screen and (min-width:0px) and (max-width:767px){
+
+.sum{
+    display: none;
+}
+
+.bannerb{
+    width: 150px;
+    height: auto;
+}
+}
+
+button {
+    background-color: #000000;
+}
+
+btn-secondary btn-sm {
+    background-color: #000000;
+}
